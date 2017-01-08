@@ -1,44 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Solar Calculator ~ Rock Forest Labs</title>
-</head>
-<body>
-<h1>Solar Calculator Web page!</h1>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="css/styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+		<title>Solar Calculator ~ Rock Forest Labs</title>
+	</head>
+	<body>
+	<h1>Solar Calculator Web Page!</h1>
 
-<form action="" method="post" name="solar_form">
-	<fieldset id="mpc">
-		<legend>Input Monthly Power Consumption</legend>
-		<p>Enter your last 12 months of electrical usage in the corresponding fields.</p>
-		<label><span>January</span><input name="jan" type="number" value="1080">kWh</label>
-		<label><span>February</span><input name="feb" type="number" value="760">kWh</label>
-		<label><span>March</span><input name="mar" type="number" value="762">kWh</label>
-		<label><span>April</span><input name="apr" type="number" value="766">kWh</label>
-		<label><span>May</span><input name="may" type="number" value="579">kWh</label>
-		<label><span>June</span><input name="jun" type="number" value="695">kWh</label>
-		<label><span>July</span><input name="jul" type="number" value="1015">kWh</label>
-		<label><span>August</span><input name="aug" type="number" value="1216">kWh</label>
-		<label><span>September</span><input name="sep" type="number" value="1033">kWh</label>
-		<label><span>October</span><input name="oct" type="number" value="769">kWh</label>
-		<label><span>November</span><input name="nov" type="number" value="326">kWh</label>
-		<label><span>December</span><input name="dec" type="number"value="682">kWh</label>
-	</fieldset>
-	<fieldset>
-		<legend>Sunshine Zones</legend>
-		<figure><img src="img/zone-map.gif" alt="Sunshine zone map of the United States"></figure>
-		<select name="zone" id="zone_list">
-			<option value="zone_1">Zone 1</option>
-			<option value="zone_2">Zone 2</option>
-			<option value="zone_3">Zone 3</option>
-			<option value="zone_4">Zone 4</option>
-			<option value="zone_5">Zone_5</option>
-			<option value="zone_6">Zone 6</option>
-		</select>
-	</fieldset>
-</form>
-</body>
+		<form action="" method="post" name="solar_form">
+
+			<!-- Start of monthly usage input -->
+			<fieldset id="monthly_power_consumption">
+				<legend>Input Monthly Power Consumption</legend>
+				<p>Enter your last 12 months of electrical usage in the corresponding fields.</p>
+				<label><span>January</span><input name="jan" type="number" value="1080">kWh</label>
+				<label><span>February</span><input name="feb" type="number" value="760">kWh</label>
+				<label><span>March</span><input name="mar" type="number" value="762">kWh</label>
+				<label><span>April</span><input name="apr" type="number" value="766">kWh</label>
+				<label><span>May</span><input name="may" type="number" value="579">kWh</label>
+				<label><span>June</span><input name="jun" type="number" value="695">kWh</label>
+				<label><span>July</span><input name="jul" type="number" value="1015">kWh</label>
+				<label><span>August</span><input name="aug" type="number" value="1216">kWh</label>
+				<label><span>September</span><input name="sep" type="number" value="1033">kWh</label>
+				<label><span>October</span><input name="oct" type="number" value="769">kWh</label>
+				<label><span>November</span><input name="nov" type="number" value="326">kWh</label>
+				<label><span>December</span><input name="dec" type="number"value="682">kWh</label>
+			</fieldset>
+			<!-- End of monthly usage input -->
+
+			<!-- Start of the sunshine zone selection -->
+			<fieldset id="sunshine_zones">
+				<legend>Sunshine Zones</legend>
+				<figure><img src="img/zone-map.gif" alt="Sunshine zone map of the United States"></figure>
+				<p>Choose the appropriate sunshine zone number.</p>
+				<select name="zone" id="zone_list">
+					<option value="zone_1">Zone 1</option>
+					<option value="zone_2">Zone 2</option>
+					<option value="zone_3">Zone 3</option>
+					<option value="zone_4">Zone 4</option>
+					<option value="zone_5">Zone_5</option>
+					<option value="zone_6">Zone 6</option>
+				</select>
+			</fieldset>
+			<!-- End of the sunshine zone selection -->
+
+
+		</form>
+	</body>
 <script type="text/javascript" src="js/script.js"></script>
 </html>
