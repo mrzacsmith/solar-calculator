@@ -42,14 +42,29 @@
 					<option value="zone_2">Zone 2</option>
 					<option value="zone_3">Zone 3</option>
 					<option value="zone_4">Zone 4</option>
-					<option value="zone_5">Zone_5</option>
+					<option value="zone_5">Zone 5</option>
 					<option value="zone_6">Zone 6</option>
 				</select>
 			</fieldset>
 			<!-- End of the sunshine zone selection -->
 
+			<!-- Start solar panel selection -->
+			<fieldset id="panels">
+				<legend>Panel Selection</legend>
+				<p>Select your solar panel choice.</p>
+					<select name="panels" id="panels">
+						<option value="250">Panel 1 ~ 250</option>
+						<option value="260">Panel 2 ~ 260</option>
+						<option value="275">Panel 3 ~ 275</option>
+					</select>
+			</fieldset>
+			<!-- End solar panel selection -->
 
 		</form>
+
+		<div>
+			<button type="button" onclick="calculate_solar()">Calculate Solar Needs!</button>
+		</div>
 	</body>
 <script type="text/javascript" src="js/script.js"></script>
 </html>
